@@ -1,2 +1,2 @@
 # usernameoliver.github.io
-index.html
+The index.html file locates at myWebsite folder
