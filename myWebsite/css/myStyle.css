@@ -1,5 +1,19 @@
-body {
-	
+body, html {
+    height: 100%;
+}
+
+.bg { 
+    /* The image used */
+    background-image: url("../img/Oliver@dunhuang.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
 }
 
 h1 {
@@ -21,7 +35,7 @@ p {
 }
 
 img { 
-    width: 100%;
+    width: auto;
     height: auto;
     opacity: 1;
 }
@@ -58,4 +72,8 @@ li a.active {
 li a:hover:not(.active) {
 	background-color: #555;
 	color: white;
+}
+
+a {
+    color: green;
 }
