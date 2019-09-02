@@ -1,0 +1,66 @@
+<!-- http://shoutkey.com/eager
+	 http://shoutkey.com/run -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="../css/myStyle.css">
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		<script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.js"></script>
+		<script src="../index.js"></script>
+		<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+		<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  margxin: 0;
+		  font-family: Arial;
+		  font-size: 17px;
+		}
+
+		.container {
+		  position: relative;
+		  max-width: 800px;
+		  margin: 0 auto;
+		}
+
+		.container img {vertical-align: middle;}
+
+		.container .content {
+		  position: absolute;
+		  bottom: 0;
+		  background: rgb(0, 0, 0); /* Fallback color */
+		  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		  color: #f1f1f1;
+		  width: 100%;
+		  padding: 20px;
+		}
+		</style>
+	</head>
+			
+	<body>
+
+		<div class="bg">
+		
+		    <h1>Paper summary week 1 -- Prediction of cardiovascular risk factors from retinal fundus photographs via deep learning</h1>
+
+			<p>The cardiovascular disease (CVD) is the leading cause of death globally. However existing CVD risk caculators such as SCORE require variables such as cholesterol levels that are sometimes missing in patients' record. Researchers from Google proposed to use deep learning to dicover new risk factors for CVD from retinal fundus images. Furthermore, they improved the prediction accuracy of Major Adverse Cardiovascular Event(MACE) in five years by leveraging the new risk factor information they discovered. The way to incorporate that medical discovery is through multi-task learning.</p>
+			<p>Multi-task learning allows us to train one neural network to do several things at the same time and each of task helps all of the other tasks. This technique is particularly useful when training on a set of tasks that could benefit from sharing lower-level features. In this paper, multiple risk factors such as age, gender, smoke status, blood pressure are all predicted by the same network (Inception V3). And it turns out the model aimed to predict those factors as well as MACE achieves higher performance(AUC = 0.73) in predicitng MACE than the model solely trained to predict MACE(AUC = 0.70).</p>
+			<p>Another highlight of the paper is the explanation of how the neural network models arrived at the predictions. To understand the mechanism, a method called "soft-attention mapping" is applied to the CNN model. However, this is also where I have to cast doubt on. Instead of mapping the activation layers of the Inception V3 model with which we observed the best performance, the author mapped the model's attention with a simple and shallow CNN. I think it would be promising to investigate where the inception V3 model focuses its attention.</p>
+			<p>For more information, here is a <a href = 'https://www.youtube.com/watch?v=rYuN1B3Mtf0'>podcast</a> of interview with Ryan Poplin, one of the author of the paper.</p>
+			<p>The original paper can be found <a href="https://arxiv.org/ftp/arxiv/papers/1708/1708.09843.pdf">here</a></p>
+			<p>Andrew Ng's introduciton to <a href="https://www.youtube.com/watch?v=UdXfsAr4Gjw">Multi-task Learning</a></p>
+			
+			<h5> <a href = 'http://usernameoliver.github.io/myWebsite/index.html'>Home</a></h5>
+			<h5> <a href = 'http://usernameoliver.github.io/myWebsite/blog.html'>Blogs</a></h5>
+			<h5> created on 09/02/2019</h5>
+		</div>
+		
+		
+	
+	</body>
+</html>
