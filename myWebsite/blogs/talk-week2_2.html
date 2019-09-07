@@ -1,0 +1,64 @@
+<!-- http://shoutkey.com/eager
+	 http://shoutkey.com/run -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="../css/myStyle.css">
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		<script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.js"></script>
+		<script src="../index.js"></script>
+		<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+		<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  margxin: 0;
+		  font-family: Arial;
+		  font-size: 17px;
+		}
+
+		.container {
+		  position: relative;
+		  max-width: 800px;
+		  margin: 0 auto;
+		}
+
+		.container img {vertical-align: middle;}
+
+		.container .content {
+		  position: absolute;
+		  bottom: 0;
+		  background: rgb(0, 0, 0); /* Fallback color */
+		  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		  color: #f1f1f1;
+		  width: 100%;
+		  padding: 20px;
+		}
+		</style>
+	</head>
+			
+	<body>
+
+		<div class="bg">
+		
+		    <h1>Biomdecal Informatics Talk week 2</h1>
+
+			<p>Title: Deep learning over heterogeneous data. a challenge, a solution and an application to poly signal prediciton </p>
+			<p>This talk is given by Haohan Wang, Ph.D. student from Carnegie Mellon University.</p>
+			<p>Haohan pointed out that the direction of training neural network is not only avhieving higher accuracy but also making the model robust. Robustness here is not restricted to certain domain, or a certain distribution of data. Rather, domain generalization should be the pursuit of a machine learning model. In order to achieve domain generalization, Haohan propose that the model should be able to understand the sematics of an image. How to define the sematics of the image? This question is hard to answer. However, we can define what is not semantics? The answer is superficial textual features. In Haohan's <a href = 'https://openreview.net/pdf?id=rJEjjoR9K7'>ICLR paper</a> Learning Robust Representations by Projecting Superficial Statistics Out, they incorporate the gray-level occurrence matrix (GLCM) to extract patterns that our prior knowledge suggests are superficial: they are sensitive to texture but unable to capture the gestalt of an image. For details, please refer to his <a href = 'https://github.com/HaohanWang/HEX'> Github</a></p>
+			<p>Haohan's idea is very interesting because this is one step towards real intelligence. Although some CNN model achieved performance comparable to human, it is usually restricted to certain domain. For example, a model that learns to classify cartoon images are unable to classify same classes but in natural images. Thus extracting superficial information for the image might help the model to better learn the sematics of the image.</p>
+			
+			<h5> <a href = 'http://usernameoliver.github.io/myWebsite/index.html'>Home</a></h5>
+			<h5> <a href = 'http://usernameoliver.github.io/myWebsite/blog.html'>Blogs</a></h5>
+			<h5> created on 09/06/2019</h5>
+		</div>
+		
+		
+	
+	</body>
+</html>
