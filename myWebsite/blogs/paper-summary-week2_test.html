@@ -46,14 +46,15 @@
 
 		<div class="bg">
 		
-		    <h1>Paper summary week 3 --Image-based survival prediction for lung cancer patients using CNNs</h1>
-			<p>Traditional survival models such Cox use clinical features. With the advancement of computer vision and AI, is it possible to combine the clinical features with imaging features? In this paper, the authors provide a multi-modal learning framework -- they incoporated selected radiomics features as well as CT imaging features into the model. After combining all these features, a Cox proportional hazards model is fitted to predict the likelihood of an event. It turns out their model wins over the baseline(radiomics + Cox) a little (0.02) </p>
-            <p>The inspiration of this work is its transformation from a regression problem to a classification problem: they classify whether a patient's survival time exeeds the median survival time. In this way, it not only ease the training of the CNN but also balanced the number of cases in each class.</p> 
-			<p>The result is published on IEEE 16th Symposium on Biomedical Imaging [<a href="https://arxiv.org/abs/1808.09679">Paper Link</a>]</p>
+		    <h1>Paper summary week 2 -- Weakly Supervised Universal Fracture Detection in Pelvic X-rays</h1>
+            <p>Authors of the paper comes from a company called <a href = "http://www.paii-labs.com/">PAII inc</a>.</p>
+			<p>The X-rays stored in hospital usually only has a label but where the fracture happens is missing. In this paper, the author proposed two consecutive networks to first propose suspicious regions of interest(ROI) then trained another classifier to confirm the existence of fractures. The ROI is produced by a weakly supervised detection algorithm: an off-the-shelf deep convolutional neural network first produces a saliency map with a resolution of 64 X 64; The saliency map is passed through an activation function to generate a probability map; After that, a log of the sum of the exponentials(LSE) pooling is applied to the probability map; Finally the ROCs are mined by picking the top K ROIS from each image based on the probability thresholding.</p>
+            <p>The label accuracy of mined probable positive ROIs is evaluated on 438 Pelvic X-rays with fracture location annotations. The reported accuracy is 0.925.</p> 
+			<p> <a href="https://arxiv.org/pdf/1909.02077.pdf">Paper Link</a></p>
 			
 			<h5> <a href = 'http://usernameoliver.github.io/myWebsite/index.html'>Home</a></h5>
 			<h5> <a href = 'http://usernameoliver.github.io/myWebsite/blog.html'>Blogs</a></h5>
-			<h5> created on 09/16/2019</h5>
+			<h5> created on 09/02/2019</h5>
 		</div>
 		
 		
