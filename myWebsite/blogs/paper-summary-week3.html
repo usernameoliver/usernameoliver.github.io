@@ -1,0 +1,62 @@
+<!-- http://shoutkey.com/eager
+	 http://shoutkey.com/run -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="../css/myStyle.css">
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		<script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.js"></script>
+		<script src="../index.js"></script>
+		<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+		<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  margxin: 0;
+		  font-family: Arial;
+		  font-size: 17px;
+		}
+
+		.container {
+		  position: relative;
+		  max-width: 800px;
+		  margin: 0 auto;
+		}
+
+		.container img {vertical-align: middle;}
+
+		.container .content {
+		  position: absolute;
+		  bottom: 0;
+		  background: rgb(0, 0, 0); /* Fallback color */
+		  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		  color: #f1f1f1;
+		  width: 100%;
+		  padding: 20px;
+		}
+		</style>
+	</head>
+			
+	<body>
+
+		<div class="bg">
+		
+		    <h1>Paper summary week 3 --Image-based survival prediction for lung cancer patients using CNNs</h1>
+			<p>Traditional survival models such Cox use clinical features. With the advancement of computer vision and AI, is it possible to combine the clinical features with imaging features? In this paper, the authors provide a multi-modal learning framework -- they incoporated selected radiomics features as well as CT imaging features into the model. After combining all these features, a Cox proportional hazards model is fitted to predict the likelihood of an event. It turns out their model wins over the baseline(radiomics + Cox) a little (0.02) </p>
+            <p>The inspiration of this work is its transformation from a regression problem to a classification problem: they classify whether a patient's survival time exeeds the median survival time. In this way, it not only ease the training of the CNN but also balanced the number of cases in each class.</p> 
+			<p>The result is published on IEEE 16th Symposium on Biomedical Imaging <a href="https://arxiv.org/abs/1808.09679">Paper Link</a></p>
+			
+			<h5> <a href = 'http://usernameoliver.github.io/myWebsite/index.html'>Home</a></h5>
+			<h5> <a href = 'http://usernameoliver.github.io/myWebsite/blog.html'>Blogs</a></h5>
+			<h5> created on 09/16/2019</h5>
+		</div>
+		
+		
+	
+	</body>
+</html>
