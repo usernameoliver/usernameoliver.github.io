@@ -1,0 +1,68 @@
+<!-- http://shoutkey.com/eager
+	 http://shoutkey.com/run -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="../css/myStyle.css">
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		<script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.js"></script>
+		<script src="../index.js"></script>
+		<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+		<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  margxin: 0;
+		  font-family: Arial;
+		  font-size: 17px;
+		}
+
+		.container {
+		  position: relative;
+		  max-width: 800px;
+		  margin: 0 auto;
+		}
+
+		.container img {vertical-align: middle;}
+
+		.container .content {
+		  position: absolute;
+		  bottom: 0;
+		  background: rgb(0, 0, 0); /* Fallback color */
+		  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		  color: #f1f1f1;
+		  width: 100%;
+		  padding: 20px;
+		}
+		</style>
+	</head>
+			
+	<body>
+
+		<div class="bg">
+		
+		    <h1>Learning from Geometry and Parsimony in the Visual World</h1>
+
+
+			<p>by SHUBHAM TULSIANI</p>
+            <p> This talk comes from the CMU AI seminar sponsored by Apple</p>
+			<p>The speaker proposed that  our 2D percepts are projections of an underlying 3D world, can allow us to bypass the need of supervision and learn to infer this 3D, as well as recover 2D to 2D correspondences.</p>
+
+			<p>Specifically, he first asked two questions: 1) What representation to infer? 2) How can we learn to infer it?</p>
+            <p>The answer to the first question is 3D copositional. The example is that human can see a 2D picture and infer the 3D structure inside the image. And the answer to the second question is Geometry and Parsimony. The speaker gave example of abstraction via constrained reconstruction. The Constraints include converage loss, consistency loss and parsimony reward.</p>
+            <p>This talk is very inspiring to medical images. Reconstructing 3D image from 2D images has been applied to CT for a long time. However, I asked radiologists today and they still find the 2D images most useful. The reason is that when presenting 3D structures to doctors, the information is not fully transferred from 2D. Research is promising on how to reconstruct 3D images by taking advantage of the geometry mentioned by the speaker. Moreover, I think the anatomical information can be a form of geometry and there should be some way to incorporate it into a model for reconstruction.</p>
+            <p><a href = 'https://shubhtuls.github.io/'> Speaker's website</a></p>
+			<h5> <a href = 'http://usernameoliver.github.io/myWebsite/index.html'>Home</a></h5>
+			<h5> <a href = 'http://usernameoliver.github.io/myWebsite/blog.html'>Blogs</a></h5>
+			<h5> created on 11/26/2019</h5>
+		</div>
+		
+		
+	
+	</body>
+</html>
