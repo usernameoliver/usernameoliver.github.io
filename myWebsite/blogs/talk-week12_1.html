@@ -1,0 +1,67 @@
+<!-- http://shoutkey.com/eager
+	 http://shoutkey.com/run -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="../css/myStyle.css">
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		<script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.js"></script>
+		<script src="../index.js"></script>
+		<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+		<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  margxin: 0;
+		  font-family: Arial;
+		  font-size: 17px;
+		}
+
+		.container {
+		  position: relative;
+		  max-width: 800px;
+		  margin: 0 auto;
+		}
+
+		.container img {vertical-align: middle;}
+
+		.container .content {
+		  position: absolute;
+		  bottom: 0;
+		  background: rgb(0, 0, 0); /* Fallback color */
+		  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		  color: #f1f1f1;
+		  width: 100%;
+		  padding: 20px;
+		}
+		</style>
+	</head>
+			
+	<body>
+
+		<div class="bg">
+		
+		    <h1>Virtually Indistinguishable Digital Doubles</h1>
+
+
+			<p>by Jason Saragih</p>
+            <p>Digital doubles refer to the representations of humans that are indistinguishable from the real thing. In this talk, the speaker introduced the virtual reality techniques involved in 3d reconstruction of the human representation. From hair reconstruction, eye reconstruction to pose reconstruction, the speaker gave a step-by-step introduction on how automating the creation of digital doubles. The data collection is achieved by capturing the facial movement of a person through hundreds of cameras in a small room. Then it comes the most important step -- registration. Those captured images of the same time point are combined as multiple views and fed to a VAE(variational autoencoder). The VAE model is able to reconstruct the 3D structure via meshes, point clouds or voxels. Finally, some rendering techniques are also deployed to improve the overall looking of the 3D animation.   </p>
+            <p>In the end, the speaker also pointed out the future direction communication -- Telepresence. In retrospect of human's history, the communication tools are envolving from mail to telegraph, from telegraph to telephone, and from telephone to video conferencing. What would be the next-generation tool for communication? Telepresence will address our need of knowing the 3D appearance of the person we want to contact. It will provide a vivid looking of the object and thus makes us feel like it was in front of us. </p>
+            <p> I am particularly interested in the idea of registration of unstructured point-clouds to a common medsh representation using self-supervised learning. This is also inspring to the 3d reconstruciton in medical imaging. Please find below for the paper introduced in this talk </p> 
+            <p> This talk comes from the CMU AI seminar sponsored by Apple</p>
+            <p><a href = 'http://jsaragih.org/Home_Page.html/'> Speaker's website</a></p>
+            <p><a href = 'http://openaccess.thecvf.com/content_CVPR_2019/papers/Li_LBS_Autoencoder_Self-Supervised_Fitting_of_Articulated_Meshes_to_Point_Clouds_CVPR_2019_paper.pdf'>LBS Autoencoder: Self-supervised Fitting of Articulated Meshes to Point Clouds</a></p>
+			<h5> <a href = 'http://usernameoliver.github.io/myWebsite/index.html'>Home</a></h5>
+			<h5> <a href = 'http://usernameoliver.github.io/myWebsite/blog.html'>Blogs</a></h5>
+			<h5> created on 12/13/2019</h5>
+		</div>
+		
+		
+	
+	</body>
+</html>
